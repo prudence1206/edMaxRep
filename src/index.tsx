@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { CountComponent } from './add_listner_fun';
 import { CustomInput } from './input_class_component';
 import {GreenComponent} from './green_sqrt'
+import { RendSymComponent } from './renSym';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-root.render(<CountComponent value={20}/>);
-root.render(<CustomInput errMessText={["Введен пробел"]}/>);
-root.render(<GreenComponent/>);
+// root.render(<CountComponent value={20}/>);
+// root.render(<CustomInput errMessText={["Введен пробел"]}/>);
+// root.render(<GreenComponent/>);
+root.render(<RendSymComponent height={5} symbol='*'/>);
 
 // const var_el = <div>123</div>;
 
